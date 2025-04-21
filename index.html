@@ -13,21 +13,23 @@
       <img src="images/logo.png" alt="イベントロゴ" class="logo" />
       <div style="margin: 1em 0 0.5em 0">
         <a
-          href="#circles"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeEgisgPMfsLnuEqbzgFsfUUt31faO376NjVR0jpCAMdHT_yg/viewform?usp=header"
           style="
             display: inline-block;
             background: #fff700;
-            color: #d40000;
+            color: #000000;
             font-weight: bold;
             font-size: 1.2em;
             padding: 0.4em 1em;
             border-radius: 6px;
-            text-decoration: underline;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
             border: 2.5px solid #d40000;
+            text-decoration: none;
           "
         >
-          サークル参加募集中2025/5/2 23:59まで → <a href="#" style="text-decoration: underline; color: #d40000;">応募はコチラ</a>
+          サークル参加募集中2025/5/2 23:59まで
+          <span class="blink-arrow">→</span>
+          <span style="color: #000">応募はコチラ</span>
         </a>
         <div
           style="
@@ -285,5 +287,21 @@
     <footer>
       <small>&copy; 2025 necobit / 猫とロボット社</small>
     </footer>
+    <style>
+      .blink-arrow {
+        animation: blink-arrow-anim 1s steps(1, end) infinite;
+      }
+      @keyframes blink-arrow-anim {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+        25%,
+        75% {
+          opacity: 0;
+        }
+      }
+    </style>
   </body>
 </html>
